@@ -2,8 +2,8 @@
 # Author: Peter Naudus (LinuxLefty)
 # Original Source: 
 #     http://www.linuxlefty.com/SysAdmin/convert-tar-tarball-rpm-package.html
-
-
+#
+#
 # Before you use this nifty script, you’ll have to set up your environment:
 # 
 # Install rpmbuild
