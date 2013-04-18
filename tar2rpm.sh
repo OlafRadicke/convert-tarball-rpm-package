@@ -8,12 +8,12 @@
 # 
 # Install rpmbuild
 #     Install whatever packages you need to in order to get the rpmbuild 
-#     executable. If you’re using Arch, all packages you need are in in the 
-#     AUR, just read the comments as the PKGBUILD for beecrypt needs to be 
+#     executable. If you’re using Arch, all packages you need are in in the
+#     AUR, just read the comments as the PKGBUILD for beecrypt needs to be.
 #     slightly modified
 #
 # Setup a working directory for rpmbuild
-#     rpmbuild needs a working directory with specific subdirectories to build 
+#     rpmbuild needs a working directory with specific subdirectories to build
 #     packages in. Use the following command to create the directory 
 #     (obviously <WORKING_DIR> with the directory of your choice): 
 #     mkdir -p <WORKING_DIRECTORY>/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
@@ -236,11 +236,3 @@ else
     rm /tmp/tar2rpm-$$.log
 fi
 exit 0
-
-
-
-
-
-
-
-
