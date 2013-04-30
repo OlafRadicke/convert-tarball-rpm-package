@@ -20,7 +20,7 @@
 #
 # Define a working directory for rpmbuild
 #     edit ~/.rpmmacros and define %_topdir to be your working directory. The 
-#     syntax (all one line) is: %_topdir <WORKING_DIRECTORY> 
+#     syntax (all one line) is: %_topdir <WORKING_DIRECTORY>
 
 ARCH=''
 DESCRIPTION=''
@@ -36,7 +36,7 @@ URL=''
 VERSION='1'
 
 function usage {
-    echo "Usage: $0 [option1 ... optionN] <TARFILE.tar>"
+echo "Usage: $0 [option1 ... optionN] <TARFILE.tar>"
     echo "  Required flags:"
     echo "      --target | -t <target>  The directory to extract the files into during installation."
     echo "                              Must be an absolute path"
@@ -232,6 +232,7 @@ else
         echo "ERROR: RPM build failed. Check log: /tmp/tar2rpm-$$.log Spec file: /tmp/tar2rpm-$$.spec"
         exit 1
     fi
+    cp /tmp/tar2rpm-$$.spec ./tar2rpm-$$.spec
     rm /tmp/tar2rpm-$$.spec
     rm /tmp/tar2rpm-$$.log
 fi
